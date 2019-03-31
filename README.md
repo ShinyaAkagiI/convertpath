@@ -1,19 +1,23 @@
-# Document
+# ConvertPath Module
 
-Simply Convert Path from windows path to linux path.
+Simply Path Convertor for converting from windows path ('C:\\hoge') to linux path ('/C/hoge').  
 
 
 # PYPI
 
-https://pypi.org/project/ConvertPath/
+https://pypi.org/project/ConvertPath/  
 
 
 # Setup
 
+```
 pip install ConvertPath
-
+```
 
 # Usage 
 
+```
 from ConvertPath import convertpath_win2linux
-converpath_win2linux(r'C:\\hoge')
+convertpath_win2linux(r'C:\\hoge')
+# /C/hoge
+```
