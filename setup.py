@@ -9,6 +9,8 @@ setup(
     # metadata to display on PyPI
     author="Shinya Akagi",
     author_email="dummy@example",
-    description="Simple Path Converter for converting windows path (C:\hoge) to linux path (/C/hoge)",
-    license="PSF"
+    description="Simple Path Convertor",
+    long_description="Simple Path Convertor for converting windows path ('C:\hoge') to linux path ('/C/hoge')",
+    url="https://github.com/ShinyaAkagiI/convertpath", 
+    license="PSF",
 )
