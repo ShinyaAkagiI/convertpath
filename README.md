@@ -18,6 +18,6 @@ pip install convertpath
 
 ```
 from convertpath import convertpath_win2linux
-convertpath_win2linux('C:\\hoge')
+convertpath_win2linux(r'C:\\hoge')
 # /C/hoge
 ```
