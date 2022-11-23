@@ -21,7 +21,7 @@ class convertpath:
 def convertpath_win2linux(path):
     """ Convert a directory path from windows path to linux path
 
-    >>> convertpath_win2linux(r"C:\\Users\\user")
+    >>> convertpath_win2linux("C:\\Users\\user")
     '/C/Users/user'
     """
 
@@ -35,7 +35,7 @@ def convertpath_win2linux(path):
 def convertpath_linux2win(path):
     """ Convert a directory path from linux path to windows path
 
-    >>> convertpath_linux2win(r"/C/Users/user")
+    >>> convertpath_linux2win("/C/Users/user")
     'C:\\Users\\user'
     """
     
