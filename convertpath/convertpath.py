@@ -26,8 +26,9 @@ def convertpath_win2linux(path):
     """
 
     rst = PurePosixPath(Path(path))
-    rst = re.sub(r'^C:\\', r'/C', str(rst))
-    rst = re.sub(r'^c:\\', r'/c', str(rst))
+    rst = re.sub(r'^C:\\', r'/C/', str(rst))
+    rst = re.sub(r'^c:\\', r'/c/', str(rst))
+    rst = re.sub(r'\\', r'/', str(rst))
     return str(rst)
 
 
@@ -35,9 +36,9 @@ def convertpath_linux2win(path):
     """ Convert a directory path from linux path to windows path
 
     >>> convertpath_linux2win(r"/C/Users/user")
-    'C:\\\\Users\\\\user'
+    'C:\\Users\\user'
     """
     
-    path = re.sub(r'^/[Cc]', r'', str(path))
+    path = re.sub(r'^/[Cc]', r'C:', str(path))
     rst = PureWindowsPath(Path(path))
     return str(rst)
