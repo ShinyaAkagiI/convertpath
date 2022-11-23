@@ -7,7 +7,7 @@ with open('README.md', 'r') as f:
 
 setup(
     name="convertpath",
-    version="0.2.3",
+    version="0.2.4",
     py_modules=["convertpath"],
     package_dir = {"": "convertpath"},
     install_requires=['pathlib'],
