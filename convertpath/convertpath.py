@@ -39,6 +39,6 @@ def convertpath_linux2win(path):
     'C:\\Users\\user'
     """
     
-    path = re.sub(r'^/[Cc]', r'C:', str(path))
+    path = re.sub(r'^/[Cc]/', r'C:\\', str(path))
     rst = PureWindowsPath(Path(path))
     return str(rst)
